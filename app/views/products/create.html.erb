@@ -1,0 +1,10 @@
+<h2>Create View</h2>
+
+<%= params[:product] %>
+
+<% product = Product.new(params[:product]) %>
+<%= product.save %>
+<%= product.inspect %>
+
+<%= product.errors.inspect %>
+
